@@ -1,0 +1,16 @@
+/* .example-ripple-container mat-elevation-z4{
+
+
+  font-display: block ;
+  font-size: 16px;
+   padding: 14px 40px;
+   margin-left: 400px;
+    cursor: pointer;
+
+} */
+
+.example-card {
+  max-width: 400px;
+  margin-bottom: 8px;
+}
+

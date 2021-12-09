@@ -1,0 +1,27 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" 
+  class="2nd" style="background-image: linear-gradient(rgb(17, 24, 39),rgb(24, 59, 134)); width: 190px;" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar style="background-color: rgb(17, 24, 39); color: white;"  >Fuelup</mat-toolbar>
+    <mat-nav-list style="margin-top: 150px;">
+      
+      <a mat-list-item routerLink="/home" style="color: white; margin-left: 40px;">Home</a>
+      <!-- <div class="line"  margin-left: 186px;"></div> -->
+      <hr>
+      <a mat-list-item routerLink="/about" style="color: white; margin-left: 40px;">About</a>
+      <hr>
+      <a mat-list-item routerLink="/work" style="color: white; margin-left: 40px;">Benefits</a>
+      <hr>
+
+      <a mat-list-item routerLink="/work2" style="color: white; margin-left: 40px;">Work</a>
+      <hr>
+    </mat-nav-list>
+  </mat-sidenav>
+
+    
+    <router-outlet></router-outlet>
+    <!-- Add Content Here -->
+ 
+</mat-sidenav-container>
